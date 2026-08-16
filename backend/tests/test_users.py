@@ -3,7 +3,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
 from app.config import settings
-from app.models import User
+from app.model import User
 
 
 def test_list_users_empty(client: TestClient) -> None:

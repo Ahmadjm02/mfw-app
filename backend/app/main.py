@@ -10,7 +10,7 @@ from app.config import settings
 from app.db import get_db
 from app.logging_config import configure_logging
 from app.middleware import catch_unhandled_errors, log_requests
-from app.models import User
+from app.model import User
 from app.schemas import UserRead
 
 configure_logging()

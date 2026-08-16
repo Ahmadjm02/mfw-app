@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Fonts are bundled, not fetched from a CDN, so the app renders identically offline. */
+@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource-variable/public-sans";
+
+@theme {
+  --font-display: "Bricolage Grotesque Variable", sans-serif;
+  --font-sans: "Public Sans Variable", sans-serif;
+
+  --color-ground: #dcdfd6;
+  --color-surface: #e8ebe3;
+  --color-card: #fbfbf7;
+  --color-row-hover: #f4f5ef;
+  --color-edge: #c3cbb8;
+  --color-edge-strong: #d3d8ca;
+  --color-line: #e1e5da;
+  --color-line-soft: #edefe8;
+  --color-accent: #4e6152;
+  --color-accent-dark: #3c4c40;
+  --color-accent-muted: #7c8a78;
+  --color-ink: #1f2a21;
+  --color-ink-body: #4a554c;
+  --color-ink-muted: #5c6a5e;
+  --color-alert: #a63b4a;
+  --color-alert-dark: #8c2f3c;
+
+  --animate-spin-slow: spin 0.8s linear infinite;
+  --animate-shimmer: shimmer 1.4s ease-in-out infinite;
+
+  @keyframes shimmer {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.85;
+    }
+  }
+}
+
+body {
+  background: var(--color-ground);
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+}

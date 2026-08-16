@@ -3,7 +3,7 @@ import logging
 from sqlalchemy import select
 
 from app.db import SessionLocal
-from app.models import User
+from app.model import User
 
 logger = logging.getLogger("mfw")
 
